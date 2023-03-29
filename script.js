@@ -6,32 +6,22 @@ const clearButton = document.getElementById('clear-btn');
 
 const body = document.querySelector('body');
 
-themeSwitch.addEventListener('change', () => {
-  if (themeSwitch.checked) {
-    body.classList.add('dark-theme');
-  } else {
-    body.classList.remove('dark-theme');
-  }
-});
-
 // Check for saved theme preference
 const currentTheme = localStorage.getItem('theme');
-if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  if (currentTheme === 'dark') {
-    themeSwitch.checked = true;
-    icon.innerText = '🌙';
-  }
+if (currentTheme === 'dark') {
+  body.classList.add('dark-theme');
+  themeSwitch.checked = true;
+  icon.innerText = '🌙';
 }
 
 // Update theme preference
-themeSwitch.addEventListener('change', function () {
-  if (this.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
+themeSwitch.addEventListener('change', () => {
+  if (themeSwitch.checked) {
+    body.classList.add('dark-theme');
     localStorage.setItem('theme', 'dark');
     icon.innerText = '🌙';
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    body.classList.remove('dark-theme');
     localStorage.setItem('theme', 'light');
     icon.innerText = '☀️';
   }
