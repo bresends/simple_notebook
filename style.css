@@ -11,13 +11,14 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 h1 {
   font-size: 36px;
+  padding-bottom: 2rem;
 }
 
 .notebook {
@@ -29,10 +30,10 @@ h1 {
 
 textarea {
   width: 100%;
-  height: 500px;
+  height: 550px;
   border: none;
   outline: none;
-  resize: none;
+  resize: vertical;
   background-color: var(--note-bg-color);
   color: var(--note-text-color);
   font-size: 16px;
@@ -57,7 +58,7 @@ button {
   color: var(--clear-btn-text-color);
 }
 
-.top {
+.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,23 +66,28 @@ button {
 }
 
 .theme-switcher {
-  margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
 .theme-switcher__icon {
   font-size: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch_checkbox {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
 
-.switch input {
+.switch_checkbox input {
   opacity: 0;
   width: 0;
   height: 0;

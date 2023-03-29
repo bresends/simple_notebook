@@ -3,25 +3,29 @@
   <head>
     <title>Notebook</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
   </head>
   <body>
     <div class="container">
-      <div class="top">
-        <h1>📝Notebook</h1>
+      <h1>📝Notebook</h1>
+      <div class="notebook">
+        <textarea id="note"></textarea>
+      </div>
+      <div class="bottom">
         <div class="theme-switcher">
-          <label class="switch">
+          <div class="buttons">
+            <button id="save-btn">Save</button>
+            <button id="clear-btn">Clear</button>
+          </div>
+        </div>
+        <div class="switch">
+          <label class="switch_checkbox">
             <input type="checkbox" id="theme-switch" />
             <span class="slider round"></span>
           </label>
           <span class="theme-switcher__icon">☀️</span>
         </div>
       </div>
-      <div class="notebook">
-        <textarea id="note"></textarea>
-      </div>
-      <button id="save-btn">Save</button>
-      <button id="clear-btn">Clear</button>
     </div>
     <script src="script.js"></script>
   </body>
