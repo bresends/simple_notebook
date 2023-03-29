@@ -2,23 +2,26 @@
 <html>
   <head>
     <title>Notebook</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
   </head>
   <body>
     <div class="container">
-      <h1>Notebook</h1>
+      <div class="top">
+        <h1>📝Notebook</h1>
+        <div class="theme-switcher">
+          <label class="switch">
+            <input type="checkbox" id="theme-switch" />
+            <span class="slider round"></span>
+          </label>
+          <span class="theme-switcher__icon">☀️</span>
+        </div>
+      </div>
       <div class="notebook">
         <textarea id="note"></textarea>
       </div>
       <button id="save-btn">Save</button>
       <button id="clear-btn">Clear</button>
-      <div class="theme-switcher">
-        <span>Switch theme:</span>
-        <label class="switch">
-          <input type="checkbox" id="theme-switch">
-          <span class="slider round"></span>
-        </label>
-      </div>
     </div>
     <script src="script.js"></script>
   </body>

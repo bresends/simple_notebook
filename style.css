@@ -18,7 +18,6 @@ body {
 
 h1 {
   font-size: 36px;
-  margin-bottom: 20px;
 }
 
 .notebook {
@@ -58,8 +57,21 @@ button {
   color: var(--clear-btn-text-color);
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
 .theme-switcher {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switcher__icon {
+  font-size: 2.5rem;
 }
 
 .switch {
