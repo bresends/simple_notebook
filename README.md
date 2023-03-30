@@ -1,4 +1,4 @@
-# Simple Notebook
+# Simple Notepad
 
 This is a simple notebook web app built using HTML, CSS, and JavaScript. It allows users to type and save notes in their browser.
 
